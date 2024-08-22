@@ -7,8 +7,8 @@ services:
     working_dir: /tf
     volumes:
       - ./src:/tf
-      - ./data/PolyMNIST/MMNIST/test/m0:/tf/data/PolyMNIST/MMNIST/test
-      - ./data/PolyMNIST/MMNIST/train/m0:/tf/data/PolyMNIST/MMNIST/train
+      - ./data/PolyMNIST/MMNIST/test/m0:/tf/data/test
+      - ./data/PolyMNIST/MMNIST/train/m0:/tf/data/train
     ports:
       - "8888:8888"
     deploy:
